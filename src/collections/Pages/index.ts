@@ -120,6 +120,21 @@ export const Pages: CollectionConfig<'pages'> = {
         position: 'sidebar',
       },
     },
+    {
+      name: 'direction',
+      type: 'select',
+      label: 'Text Direction',
+      defaultValue: 'ltr',
+      options: [
+        { label: 'Left to Right', value: 'ltr' },
+        { label: 'Right to Left', value: 'rtl' },
+      ],
+      required: true,
+      admin: {
+        position: 'sidebar',
+      },
+    },
+
     ...slugField(),
   ],
   hooks: {

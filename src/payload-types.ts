@@ -201,6 +201,7 @@ export interface Page {
     description?: string | null;
   };
   publishedAt?: string | null;
+  direction: 'ltr' | 'rtl';
   slug?: string | null;
   slugLock?: boolean | null;
   updatedAt: string;
@@ -1034,6 +1035,7 @@ export interface PagesSelect<T extends boolean = true> {
         description?: T;
       };
   publishedAt?: T;
+  direction?: T;
   slug?: T;
   slugLock?: T;
   updatedAt?: T;
